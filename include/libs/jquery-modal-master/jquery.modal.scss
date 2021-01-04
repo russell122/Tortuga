@@ -40,18 +40,16 @@
 	border-radius: 10px;
 	text-align: left;
   
-	a.close-modal {
-		font-size: 10px;
+	.close-modal {
+		font-size: 5px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 6em;
 		height: 6em;
 		position: absolute;
-		top: 100%;
-		left: 50%;
-		margin-left: -3em;
-		margin-top: 3em;
+		top: -9em;
+		right: 0;
 		color: transparent;
 		cursor: pointer;
 		&::before, &::after {
