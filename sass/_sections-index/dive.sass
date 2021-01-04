@@ -1,0 +1,50 @@
+.dive
+	padding: 50px 0 110px 0
+	background: url('../img/dive__bg.jpg') no-repeat 50% 50% / cover
+	@include max-screen($md)
+		padding: 40px 0 70px 0
+	@include max-screen($sm)
+		padding: 40px 0 30px 0
+	&__bloks-wrap
+		display: flex
+		flex-direction: column
+	&__wrap
+		margin-bottom: 50px
+	&__item
+		.dive__body p
+			color: $white
+		&:hover
+			.dive__body p
+				color: #a1d1ff
+	&-record__wrap
+		display: flex
+		@include max-screen($lg)
+			flex-wrap: wrap
+	&-record__left
+		flex: 0 1 50%
+		padding-right: 110px
+		@include max-screen($xl)
+			padding-right: 50px
+		@include max-screen($lg)
+			flex: 0 1 100%
+			margin-bottom: 30px
+			padding-right: 0px
+		h2
+			padding-top: 22px
+			color: $white
+			margin-bottom: 40px
+			@include max-screen($lg)
+				padding-top: 0
+			@include max-screen($sm)
+				margin-bottom: 20px
+		.dive-record__text
+			color: $white
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 40px
+			@include max-screen($sm)
+				margin-bottom: 30px
+	&-record__right
+		flex: 0 1 50%
+		@include max-screen($lg)
+			flex: 0 1 100%

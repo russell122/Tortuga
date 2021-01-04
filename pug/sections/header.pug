@@ -1,0 +1,147 @@
+// header
+header.header
+
+
+	.header__top.hide-lg
+
+		.container
+
+			.header__top-row.flex
+
+				a.header-link(href="#")
+					i.ic.ic-cart
+					| Магазин
+
+				a.header-link(href="#")
+					i.ic.ic-forum
+					| Форум
+
+				ul.social-links.list
+					li
+						a(href="#", target="_blank")
+							i.font-ic.font-vk
+					li
+						a(href="#", target="_blank")
+							i.font-ic.font-facebook
+					li
+						a(href="#", target="_blank")
+							i.font-ic.font-instagram
+
+		// /.container
+
+	// /.header__top
+
+
+	.container
+
+		.header__middle
+
+			.header__middle-row.flex
+				.logo
+					img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
+				.search.hide-lg
+					form(action="#")
+						input.input(type="text", name="search")
+						i.font-search.font-ic
+				.tel-link.hide-md
+					i.font-ic.font-phone.flex-center
+					a(href="tel:+79111594127") +7 (911) 159-41-27
+
+				.menu-toggle.show-lg
+					.menu-ic
+
+			// /.header__middle-row
+			
+
+		// /.header__middle
+
+		.header__bottom
+
+
+			nav.menu
+
+				.tel-link.show-md
+					i.font-ic.font-phone.flex-center
+					a(href="tel:+79111594127") +7 (911) 159-41-27
+
+				ul.menu__list.flex.list
+					-
+						var links = [
+							{"link": "Главная"},
+							{"link": "Обучение"},
+							{"link": "Отзывы"},
+							{"link": "Путешествия"},
+							{"link": "Блог"},
+							{"link": "Контакты"},
+						]
+					each item, i in links
+						if i == 0
+							li.active
+								a(href="#")= item.link
+						else
+							li
+								a(href="#")= item.link
+				
+				.show-lg
+
+					.menu-mob-section
+						a.header-link(href="#")
+							i.ic.ic-cart
+							| Магазин
+
+						a.header-link(href="#")
+							i.ic.ic-forum
+							| Форум
+
+						ul.social-links.list
+							li
+								a(href="#", target="_blank")
+									i.font-ic.font-vk
+							li
+								a(href="#", target="_blank")
+									i.font-ic.font-facebook
+							li
+								a(href="#", target="_blank")
+									i.font-ic.font-instagram
+					// /.menu-mob-section
+
+					.search
+						form(action="#")
+							input.input(type="text", name="search")
+							i.font-search.font-ic
+
+				// /.show-lg
+
+				ul.lang.list
+					li
+						a(href="#") Eng 
+					li.lang__sep / 
+					li.active
+						a(href="#") Rus
+
+			// /.menu
+
+
+		// /.header__bottom
+
+
+
+
+
+
+	// /.container
+
+
+
+
+
+// /.header
+
+
+
+
+
+
+
+
+

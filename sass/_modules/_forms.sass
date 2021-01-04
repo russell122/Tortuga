@@ -1,0 +1,43 @@
+/* ----- Forms ----- */
+
+*::placeholder
+	color: #b4b4b4
+	opacity: 1
+	@include trs(.1s)
+
+body input:focus:required:invalid, body textarea:focus:required:invalid,
+body input:required:valid, body textarea:required:valid
+	color: $text-color
+
+
+.input
+	display: block
+	width: 100%
+	min-width: 1px
+	height: 60px
+	padding: 15px
+	background-color: $white
+	border: 1px solid #eee
+	font-size: 18px
+	@include trs(.1s)
+	&:focus
+		outline: none
+	&::placeholder
+		opacity: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
