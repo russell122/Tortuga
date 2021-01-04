@@ -1,0 +1,74 @@
+.main-video
+	margin: 80px 0
+	@include max-screen($xl)
+		margin: 50px 0
+
+
+.video
+	position: relative
+	width: 100%
+	height: 0
+	background-color: #000
+	overflow: hidden
+	padding-top: 56%
+
+.videoIframe
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: transparent
+
+.videoPoster
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 1
+	top: 0
+	left: 0
+	cursor: pointer
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	background-size: cover
+	cursor: pointer
+	&.is-hidden
+		display: none
+	&:hover
+		.play-button
+			background: rgba($white, .9)
+
+
+.videoWrapperActive .videoPoster
+	opacity: 0
+	height: 0
+	transition-delay: 0s, 800ms
+
+.play-button
+	display: flex
+	align-items: center
+	justify-content: center
+	font-size: 10px
+	width: 9.8em
+	height: 9.8em
+	border-radius: 50%
+	background: rgba($white, .6)
+	@include trs(.1s)
+	&::before
+		content: ''
+		display: block
+		border-top: 1.8em solid transparent
+		border-bottom: 1.8em solid transparent
+		border-left: 2.2em solid $accent
+		margin-left: 1.1em
+	@include max-screen($xl)
+		font-size: 1.5vw
+
+
+
+	

@@ -106,12 +106,13 @@
 	@media (max-width: $sm)
 		font-size: 30px
 .title-2
-	margin-bottom: 1.25em
+	margin-bottom: 1.2em
 	font-size: 30px
 	line-height: 1.2
-	font-weight: 700
-	@media (max-width: $lg)
+	@include max-screen($md)
 		font-size: 26px
+		margin-bottom: .8em
+
 
 /* ----- Кнопки ----- */
 .button
@@ -130,8 +131,13 @@
 	cursor: pointer
 	overflow: hidden
 	@include trs(.1s)
-	@media (max-width: $md)
-		height: 55px
+	&:hover
+		background: darken($accent, 6)
+		box-shadow: 0 2px 7px rgba($accent, .2)
+		color: $white
+	@include max-screen($md)
+		height: 50px
+		font-size: 16px
 
 .button-white
 	display: inline-flex
@@ -188,28 +194,40 @@
 		height: 1.6em
 		background-image: url('../img/chat.svg')
 
+	&-submit
+		width: 2.4em
+		height: 2.4em
+		background-image: url('../img/paper-plane.svg')
+
+
 .social-links
 	font-size: 24px
 
-.g-card__wrap
-	display: flex
-	justify-content: space-between
-	@media (max-width: $xl)
-		flex-wrap: wrap
+
+.g-card__row
+	margin: 0 -15px
+	@media (max-width: $sm)
+		display: block
+		margin: 0
+
+.g-card__col
+	width: 25%
+	padding: 0 15px
+	&:not(:last-child)
+		margin-bottom: 30px
+	@media (max-width: $lg)
+		width: 50%
+	@media (max-width: $sm)
+		width: 100%
+		padding: 0
 
 .g-card__item
-	flex: 0 1 23%
 	display: flex
 	flex-direction: column
-	@media (max-width: $xl)
-		flex: 0 1 31%
-		margin-bottom: 30px
-		&:last-child
-			margin-bottom: 0
-	@media (max-width: $lg)
-		flex: 0 1 48%
 	@media (max-width: $sm)
-		flex: 0 1 100%
+		max-width: 300px
+		margin-left: auto
+		margin-right: auto
 	&:hover
 		.g-card__body p
 			color: #eb033c
@@ -236,10 +254,14 @@
 	@media (max-width: $lg)
 		margin: 35px 0 50px 0
 .section-indent2
-	margin-bottom: 100px
-	@media (max-width: $md)
-		margin-bottom: 70px
-	@media (max-width: $sm)
-		margin-bottom: 40px
+	margin: 50px 0
+	@media (max-width: $lg)
+		margin: 35px 0
 
 // @include max-screen($xl)
+
+
+.page-modal
+	#modal
+		display: none
+

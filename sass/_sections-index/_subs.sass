@@ -1,0 +1,124 @@
+.subs
+	padding: 50px 0
+	position: relative
+	&::after
+		content: ''
+		display: block
+		font-size: 10px
+		width: 49.7em
+		height: 36.7em
+		position: absolute
+		z-index: 0
+		left: 75%
+		top: -2em
+		background: url('../img/el-subs.png') no-repeat 50% 50% / 100%
+	@include max-screen($xxl)
+		&::after
+			left: 80%
+			font-size: 9px
+	@include max-screen($xl)
+		&::after
+			display: none
+	@include max-screen($lg)
+		padding: 35px 0
+		background: url('../img/bg-subs-mob.jpg') no-repeat 50% 50% / cover
+
+	&__bg
+		padding: 60px 0 50px
+		color: $white
+		background: url('../img/bg-subs.png') no-repeat 50% 50% / auto 300px
+		@include max-screen($lg)
+			padding: 0
+			background: none
+		
+
+	&__title
+		color: inherit
+
+	&__row
+		@include max-screen($lg)
+			display: block
+
+	&__form
+		flex: 0 0 555px
+		max-width: 555px
+		&-row
+			.submit
+				margin-left: 30px
+		.submit
+			max-width: 165px
+			text-transform: none
+		.checkbox
+			margin-top: 35px
+			@include min-screen(992px)
+				&__wrap
+					border-color: #b4b4b4
+				&__check
+					stroke: #b4b4b4
+					fill: #b4b4b4
+		@include max-screen($md)
+			margin-top: 30px
+			&-row
+				display: block
+				.submit
+					max-width: 100%
+					margin: 20px 0 0
+			.checkbox
+				margin-top: 20px
+
+
+	&__input
+		position: relative
+		flex: 1 0 0
+		.input
+			padding-left: 67px
+		.font-ic
+			font-size: 18px
+			color: #bebebe
+			position: absolute
+			left: 30px
+			top: 50%
+			transform: translateY(-50%)
+		@include max-screen($md)
+			.input
+				padding-left: 45px
+			.font-ic
+				left: 15px
+
+
+	&__txt
+		font-size: 18px
+		flex: 1 0 0
+		max-width: 340px
+		margin-left: 44px
+		@include max-screen($lg)
+			display: none
+
+
+.contacts + .subs
+	background: linear-gradient(180deg, #f9f9f9 0%, #f9f9f9 50%, #fff 50%, #fff 100%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

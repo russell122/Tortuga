@@ -1,5 +1,79 @@
 /* ----- footer ----- */
 .footer
+	padding: 37px 0
+	font-size: 18px
+	@include max-screen($lg)
+		font-size: 16px
+
+	&__row
+		position: relative
+		justify-content: space-between
+
+	&__col
+		min-width: 250px
+		margin-bottom: 50px
+		padding-right: 15px
+		@include max-screen($md)
+			margin-bottom: 35px
+
+
+	&__title
+		margin-bottom: 2em
+		font-weight: 700
+		color: $title-color
+		@include max-screen($md)
+			margin-bottom: 1.5em
+
+	&__list
+		font-weight: 300
+		li
+			&:not(:last-child)
+				margin-bottom: .3em
+		a
+			&:hover
+				color: $accent
+
+	&__email
+		display: inline-block
+		margin-bottom: 22px
+		color: #00698c
+
+	.social-links li
+		margin-right: 24px
+
+	&__scroll
+		left: 100%
+		top: 0
+		position: absolute
+		font-size: 10px
+		width: 4.8em
+		height: 4.8em
+		margin-left: 15px
+		background: url('../img/arrow-scroll.svg') no-repeat 50% 50% / 100%
+		cursor: pointer
+		opacity: 0.1
+		@include trs(.1s)
+		&:hover
+			opacity: 0.15
+
+	&__bottom
+		padding-top: 40px
+		color: #b4b4b4
+		a
+			color: #00698c
+		@include max-screen($lg)
+			padding-top: 0
+
+
+
+
+
+
+
+
+
+
+
 
 
 

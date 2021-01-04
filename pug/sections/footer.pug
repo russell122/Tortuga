@@ -2,65 +2,64 @@
 footer.footer
 
 	.container
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
-		br
 
-		
+		.footer__row.flex
+
+			-
+				var footer = [
+					{
+						"title": "Обучение",
+						"links": [
+							"Начинающим",
+							"Продолжающим",
+							"Повышаем уровень отвественности",
+							"Стать профессионалом",
+							"Детям"
+						]
+					},
+					{
+						"title": "Путешествия",
+						"links": [
+							"По России",
+							"По Миру",
+							"Отчеты",
+							"Расписание"
+						]
+					}
+				]
+			each item in footer
+				.footer__col
+					.footer__title= item.title
+					ul.list.footer__list
+						- for(let i = 0; i < item.links.length; i++)
+							li
+								a(href="#")= item.links[i]
+				// /.footer__col
+
+
+			.footer__col
+				.footer__title Контакты
+
+				a.footer__email(href="mailto:info@tortuga-diving.ru") info@tortuga-diving.ru
+
+				+social
+			// /.footer__col
+
+			button.footer__scroll.js-btn-up.hide-xl(type="button")
+
+		// /.footer__row.flex
+
+		.footer__bottom
+			| &copy; 2009-2020 
+			a(href="#") tortuga-diving 
+			| / Все права защищены.
 
 	// /.container
 
 // /.footer
 
 
-
+include modal
 
 
 

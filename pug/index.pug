@@ -1,19 +1,24 @@
 extends layout/main
 
 block variables
-	- let title = 'Название - Главная'
+	- let title = 'Тортуга'
+	- let page = 'main'
 
 
 
 block content
 	include sections-index/hero
 	include sections-index/courses
-	include sections-index/dive
-	include sections-index/why
+	//- include sections-index/dive
+	include sections-index/whywe
 	include sections-index/travels
 	include sections-index/responses
-	include sections-index/beginners
-	include sections-index/requirements
+	include sections-index/improvements
+	//- include sections-index/beginners
+	//- include sections-index/requirements
+	//- include sections-index/main-video
+	//- include sections-index/contacts
+	include sections-index/subs
 
 
 

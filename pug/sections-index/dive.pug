@@ -1,30 +1,41 @@
-section.dive.section-indent2
+section.dive
 	.container
 		.dive__bloks-wrap
 			.dive__wrap.g-card__wrap
-				a(href="#").dive__item.g-card__item
-					.dive__img.g-card__img
-						img.img(src="img/dive__img-1.png", alt="dive__img-1")
-					.dive__body.g-card__body
-						p Начинающим
-				a(href="#").dive__item.g-card__item
-					.dive__img.g-card__img
-						img.img(src="img/dive__img-2.png", alt="dive__img-2")
-					.dive__body.g-card__body
-						p Продолжение<br> обучения
-				a(href="#").dive__item.g-card__item
-					.dive__img.g-card__img
-						img.img(src="img/dive__img-3.png", alt="dive__img-3")
-					.dive__body.g-card__body
-						p Повышаем<br> ответственность
-				a(href="#").dive__item.g-card__item
-					.dive__img.g-card__img
-						img.img(src="img/dive__img-4.png", alt="dive__img-4")
-					.dive__body.g-card__body
-						p Стань<br> Профессионалом
+				.g-card__row.flex
+					.g-card__col
+						a(href="#").dive__item.g-card__item
+							.dive__img.g-card__img
+								img.img(src="img/dive__img-1.png", alt="dive__img-1")
+							.dive__body.g-card__body
+								p Начинающим
+					.g-card__col
+						a(href="#").dive__item.g-card__item
+							.dive__img.g-card__img
+								img.img(src="img/dive__img-2.png", alt="dive__img-2")
+							.dive__body.g-card__body
+								p Продолжение<br> обучения
+					.g-card__col
+						a(href="#").dive__item.g-card__item
+							.dive__img.g-card__img
+								img.img(src="img/dive__img-3.png", alt="dive__img-3")
+							.dive__body.g-card__body
+								p Повышаем<br> ответственность
+					.g-card__col
+						a(href="#").dive__item.g-card__item
+							.dive__img.g-card__img
+								img.img(src="img/dive__img-4.png", alt="dive__img-4")
+							.dive__body.g-card__body
+								p Стань<br> Профессионалом
+				// /.g-card__row.flex
+				
 			.dive-record__wrap
 				.dive-record__left
 					h2.title-2 Пробное погружение
 					p.dive-record__text Сегодня подходящий день чтобы сделать в своей жизни новое открытие! Приблизиться к подводному миру Вам поможет инструктор,под руководством которого пройдет Ваше первое занятие.
-					a(href="#").button записаться
+					a(href="#modal").button.open-modal записаться
 				.dive-record__right
+					.video
+						.videoWrapper.js-videoWrapper(data-id="sN2WM3VwVwM")
+							.videoPoster.js-videoPoster.flex-center
+								.play-button

@@ -1,0 +1,35 @@
+.table-block
+	table
+		width: 100%
+		border-collapse: collapse
+		th
+			border: 1px solid $title-color
+			text-align: center
+			padding: 20px
+			color: $title-color
+		td
+			width: 50%
+			border: 1px solid $title-color
+			color: $title-color
+			text-align: center
+			padding: 20px
+	@include max-screen($md)
+		table.delivery thead
+			display: none
+		table.delivery tr
+			display: block
+			margin-bottom: 1.5rem
+		table.delivery td
+			width: 100%
+			padding: 15px
+			margin-bottom: 5px
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		table.delivery td:before
+			content: attr(aria-label)
+			width: 60%
+			font-weight: bold
+			text-align: left
+			font-size: 14px

@@ -1,0 +1,11 @@
+.page-modal
+	.contacts-block#modal
+		h2.title-2 Обратная связь
+		.contacts-block__txt Заполните форму ниже, и мы свяжемся с&nbsp;вами в ближайшее время
+		form(action="#")
+			.contacts-input.contacts-name
+				input.input(type="text", name="name", placeholder="Ваше Имя", required)
+			.contacts-input.contacts-tel
+				input.input.js-tel-mask(type="tel", name="tel", placeholder="Ваш телефон", required)
+			button.button.submit(type="submit") Отправить 
+				i.ic.ic-submit

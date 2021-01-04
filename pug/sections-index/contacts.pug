@@ -1,0 +1,64 @@
+// contacts
+.contacts
+
+	.container
+		
+
+		.contacts__row.flex
+			.contacts__col
+				.contacts-item
+					.contacts-item__title.flex 
+						i.font-ic.font-phone.flex-center
+						| Телефон
+					a(href="tel:+79111594127") +7 (911) 159-41-27 
+					span.worktime с 9.00 до 22.00
+
+			// /.contacts__col
+			.contacts__col
+				.contacts-item
+					.contacts-item__title.flex 
+						i.font-ic.font-mail-alt.flex-center
+						| Электронная почта
+					a(href="mailto:info@tortuga-diving.ru") info@tortuga-diving.ru
+
+			// /.contacts__col
+			.contacts__col
+				.contacts-item
+					.contacts-item__title.flex 
+						i.font-ic.font-location.flex-center
+						| Адрес бассейнов
+					address.address
+						.address__title в фитнес клубе 
+							b «I Love Sport»,
+						div пр. Просвещения, 53
+						div пр. Новочеркасский, 5А
+
+			// /.contacts__col
+		// /.contacts__row.flex
+
+
+		.contacts-wrap
+
+			.contacts-logo tortuga-diving
+
+			.contacts-map
+				script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A41e0e295bf2f971026c6a3220bce2ae1fcbe0bfed165493bcc81e0318624b3e7&width=100%25&height=403&lang=ru_RU&scroll=true')
+			.contacts-block
+				h2.title-2 Обратная связь
+				.contacts-block__txt Заполните форму ниже, и мы свяжемся с&nbsp;вами в ближайшее время
+				form(action="#")
+					.contacts-input.contacts-name
+						input.input(type="text", name="name", placeholder="Ваше Имя", required)
+					.contacts-input.contacts-tel
+						input.input.js-tel-mask(type="tel", name="tel", placeholder="Ваш телефон", required)
+					button.button.submit(type="submit") Отправить 
+						i.ic.ic-submit
+
+		// /.contacts-wrap
+
+
+
+
+	// /.container
+
+// /.contacts

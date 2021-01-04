@@ -22,16 +22,63 @@ body input:required:valid, body textarea:required:valid
 	@include trs(.1s)
 	&:focus
 		outline: none
-	&::placeholder
-		opacity: 0
+		&::placeholder
+			opacity: 0
+	@include max-screen($md)
+		height: 50px
+		font-size: 16px
 
 
 
 
 
+.submit
+	width: 100%
+	.ic
+		margin-left: 1.6em
 
+.checkbox 
+	display: flex
+	align-items: center
+	cursor: pointer
 
+	&__wrap
+		position: relative
+		display: inline-block
+		font-size: 24px
+		width: 1em
+		flex: 0 0 1em
+		height: 1em
+		border: 2px solid $white
+		transition: all .1s
 
+	&__check 
+		width: 85%
+		position: absolute
+		top: 3px
+		left: 1px
+		stroke: $white
+		fill: $white
+		stroke-width: 2.5px
+		stroke-dasharray: 19px
+		stroke-dashoffset: 19px
+		transition: .2s ease-out
+
+	&__text
+		display: inline-block
+		margin-left: 1em
+		font-size: 14px
+		color: $white
+		a 
+			color: inherit
+			text-decoration: underline
+			
+	input
+		display: none
+		&:checked
+			+ .checkbox__wrap
+				.checkbox__check
+					stroke-dashoffset: 38px
 
 
 

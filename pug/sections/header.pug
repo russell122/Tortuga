@@ -16,16 +16,7 @@ header.header
 					i.ic.ic-forum
 					| Форум
 
-				ul.social-links.list
-					li
-						a(href="#", target="_blank")
-							i.font-ic.font-vk
-					li
-						a(href="#", target="_blank")
-							i.font-ic.font-facebook
-					li
-						a(href="#", target="_blank")
-							i.font-ic.font-instagram
+				+social
 
 		// /.container
 
@@ -38,7 +29,11 @@ header.header
 
 			.header__middle-row.flex
 				.logo
-					img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
+					if page == 'main'
+						img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
+					else
+						a(href="index.html")
+							img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
 				.search.hide-lg
 					form(action="#")
 						input.input(type="text", name="search")
@@ -67,20 +62,20 @@ header.header
 				ul.menu__list.flex.list
 					-
 						var links = [
-							{"link": "Главная"},
-							{"link": "Обучение"},
-							{"link": "Отзывы"},
-							{"link": "Путешествия"},
-							{"link": "Блог"},
-							{"link": "Контакты"},
+							{"link": "Главная", "href": "index.html"},
+							{"link": "Обучение", "href": "course.html"},
+							{"link": "Отзывы", "href": "#"},
+							{"link": "Путешествия", "href": "beginners.html"},
+							{"link": "Блог", "href": "text.html"},
+							{"link": "Контакты", "href": "contacts.html"}
 						]
 					each item, i in links
 						if i == 0
 							li.active
-								a(href="#")= item.link
+								a(href= item.href)= item.link
 						else
 							li
-								a(href="#")= item.link
+								a(href= item.href)= item.link
 				
 				.show-lg
 
@@ -93,16 +88,8 @@ header.header
 							i.ic.ic-forum
 							| Форум
 
-						ul.social-links.list
-							li
-								a(href="#", target="_blank")
-									i.font-ic.font-vk
-							li
-								a(href="#", target="_blank")
-									i.font-ic.font-facebook
-							li
-								a(href="#", target="_blank")
-									i.font-ic.font-instagram
+						+social
+						
 					// /.menu-mob-section
 
 					.search
