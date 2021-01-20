@@ -2979,7 +2979,7 @@ body input:required:valid, body textarea:required:valid {
   z-index: -1;
   right: 0;
   bottom: 0;
-  background: url("../img/el-why.png") no-repeat 50% 50%/100%;
+  background: url("../img/el-why.webp") no-repeat 50% 50%/100%;
 }
 
 @media screen and (max-width: 1199px) {
@@ -3561,7 +3561,7 @@ body input:required:valid, body textarea:required:valid {
   z-index: 0;
   left: 75%;
   top: -2em;
-  background: url("../img/el-subs.png") no-repeat 50% 50%/100%;
+  background: url("../img/el-subs.webp") no-repeat 50% 50%/100%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -3580,14 +3580,14 @@ body input:required:valid, body textarea:required:valid {
 @media screen and (max-width: 991px) {
   .subs {
     padding: 35px 0;
-    background: url("../img/bg-subs-mob.jpg") no-repeat 50% 50%/cover;
+    background: url("../img/bg-subs-mob.webp") no-repeat 50% 50%/cover;
   }
 }
 
 .subs__bg {
   padding: 60px 0 50px;
   color: #fff;
-  background: url("../img/bg-subs.png") no-repeat 50% 50%/auto 300px;
+  background: url("../img/bg-subs.webp") no-repeat 50% 50%/auto 300px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3763,7 +3763,7 @@ body input:required:valid, body textarea:required:valid {
 .dive {
   margin: 50px 0;
   padding: 50px 0 110px 0;
-  background: url("../img/dive__bg.jpg") no-repeat 50% 50%/cover;
+  background: url("../img/dive__bg.webp") no-repeat 50% 50%/cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -3887,7 +3887,7 @@ body input:required:valid, body textarea:required:valid {
 
 .responses {
   padding: 50px 0 110px 0;
-  background: url("../img/responses__bg.jpg") no-repeat 50% 50%/cover;
+  background: url("../img/responses__bg.webp") no-repeat 50% 50%/cover;
   position: relative;
 }
 
