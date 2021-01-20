@@ -30,10 +30,14 @@ header.header
 			.header__middle-row.flex
 				.logo
 					if page == 'main'
-						img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
+						picture
+							source(srcset="img/logo.webp" type="image/webp")
+							img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
 					else
 						a(href="index.html")
-							img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
+							picture
+								source(srcset="img/logo.webp" type="image/webp")
+								img.img(src="img/logo.png", alt="Дайв клуб Тортуга")
 				.search.hide-lg
 					form(action="#")
 						input.input(type="text", name="search")

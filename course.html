@@ -18,7 +18,7 @@
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css" onload="this.rel='stylesheet'" as="style" type="text/css">
   </head>
   <body> 
     <div class="page">
@@ -40,7 +40,10 @@
         <div class="container">
           <div class="header__middle">
             <div class="header__middle-row flex">
-              <div class="logo"><a href="index.html"><img class="img" src="img/logo.png" alt="Дайв клуб Тортуга"></a>
+              <div class="logo"><a href="index.html">
+                  <picture>
+                    <source srcset="img/logo.webp" type="image/webp"><img class="img" src="img/logo.png" alt="Дайв клуб Тортуга">
+                  </picture></a>
               </div>
               <div class="search hide-lg">
                 <form action="#">
@@ -109,22 +112,40 @@
           <div class="swip-gallery-slider swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-1.png" data-rel="lightcase:a"><img class="img" src="img/travels__img-1.png" alt="travels__img-1"></a></div>
+                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-1.png" data-rel="lightcase:a">
+                    <picture>
+                      <source srcset="img/travels__img-1.webp" type="image/webp"><img class="img" src="img/travels__img-1.png" alt="travels__img-1">
+                    </picture></a></div>
               </div>
               <div class="swiper-slide">
-                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-2.png" data-rel="lightcase:a"><img class="img" src="img/travels__img-2.png" alt="travels__img-2"></a></div>
+                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-2.png" data-rel="lightcase:a">
+                    <picture>
+                      <source srcset="img/travels__img-2.webp" type="image/webp"><img class="img" src="img/travels__img-2.png" alt="travels__img-2">
+                    </picture></a></div>
               </div>
               <div class="swiper-slide">
-                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-3.png" data-rel="lightcase:a"><img class="img" src="img/travels__img-3.png" alt="travels__img-3"></a></div>
+                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-3.png" data-rel="lightcase:a">
+                    <picture>
+                      <source srcset="img/travels__img-3.webp" type="image/webp"><img class="img" src="img/travels__img-3.png" alt="travels__img-3">
+                    </picture></a></div>
               </div>
               <div class="swiper-slide">
-                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-4.png" data-rel="lightcase:a"><img class="img" src="img/travels__img-4.png" alt="travels__img-4"></a></div>
+                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-4.png" data-rel="lightcase:a">
+                    <picture>
+                      <source srcset="img/travels__img-4.webp" type="image/webp"><img class="img" src="img/travels__img-4.png" alt="travels__img-4">
+                    </picture></a></div>
               </div>
               <div class="swiper-slide">
-                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-1.png" data-rel="lightcase:a"><img class="img" src="img/travels__img-1.png" alt="travels__img-1"></a></div>
+                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-1.png" data-rel="lightcase:a">
+                    <picture>
+                      <source srcset="img/travels__img-1.webp" type="image/webp"><img class="img" src="img/travels__img-1.png" alt="travels__img-1">
+                    </picture></a></div>
               </div>
               <div class="swiper-slide">
-                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-2.png" data-rel="lightcase:a"><img class="img" src="img/travels__img-2.png" alt="travels__img-2"></a></div>
+                <div class="beginners-slider__elem"><a class="beginners-slider__img" href="img/travels__img-2.png" data-rel="lightcase:a">
+                    <picture>
+                      <source srcset="img/travels__img-2.webp" type="image/webp"><img class="img" src="img/travels__img-2.png" alt="travels__img-2">
+                    </picture></a></div>
               </div>
             </div>
             <div class="swiper-button-prev">
@@ -192,7 +213,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -204,7 +229,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -216,7 +245,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -228,7 +261,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -240,7 +277,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -252,7 +293,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -281,22 +326,38 @@
           <div class="courses__wrap g-card__wrap">
             <div class="g-card__row flex">
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-1.png" alt="courses-img-1"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-1.webp" type="image/webp"><img class="img" src="img/courses-img-1.png" alt="courses-img-1">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Начинающим</p>
                   </div></a></div>
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-2.png" alt="courses-img-2"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-2.webp" type="image/webp"><img class="img" src="img/courses-img-2.png" alt="courses-img-2">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Продолжение<br> обучения</p>
                   </div></a></div>
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-3.png" alt="courses-img-3"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-3.webp" type="image/webp"><img class="img" src="img/courses-img-3.png" alt="courses-img-3">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Повышаем<br> ответственность</p>
                   </div></a></div>
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-4.png" alt="courses-img-4"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-4.webp" type="image/webp"><img class="img" src="img/courses-img-4.png" alt="courses-img-4">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Стань<br> Профессионалом</p>
                   </div></a></div>

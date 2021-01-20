@@ -12,10 +12,14 @@ section.whywe
 			// /.whywe__content
 
 			.whywe__images
-				img.whywe__img(src="img/img-why-1.jpg", alt="alt")
+				picture
+					source(srcset="img/img-why-1.webp" type="image/webp")
+					img.whywe__img(src="img/img-why-1.jpg", alt="alt")
 				.whywe__sert
 					.whywe__sert-img
-						img.img(src="img/img-why-2.jpg", alt="alt")
+						picture
+							source(srcset="img/img-why-2.webp" type="image/webp")
+							img.img(src="img/img-why-2.jpg", alt="alt")
 					a.whywe__sert-link(href="#") Дайв-центр PADI
 
 			// /.whywe__images

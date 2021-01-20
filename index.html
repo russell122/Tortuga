@@ -18,7 +18,7 @@
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css" onload="this.rel='stylesheet'" as="style" type="text/css">
   </head>
   <body> 
     <div class="page">
@@ -40,7 +40,10 @@
         <div class="container">
           <div class="header__middle">
             <div class="header__middle-row flex">
-              <div class="logo"><img class="img" src="img/logo.png" alt="Дайв клуб Тортуга">
+              <div class="logo">
+                <picture>
+                  <source srcset="img/logo.webp" type="image/webp"><img class="img" src="img/logo.png" alt="Дайв клуб Тортуга">
+                </picture>
               </div>
               <div class="search hide-lg">
                 <form action="#">
@@ -110,22 +113,38 @@
           <div class="courses__wrap g-card__wrap">
             <div class="g-card__row flex">
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-1.png" alt="courses-img-1"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-1.webp" type="image/webp"><img class="img" src="img/courses-img-1.png" alt="courses-img-1">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Начинающим</p>
                   </div></a></div>
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-2.png" alt="courses-img-2"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-2.webp" type="image/webp"><img class="img" src="img/courses-img-2.png" alt="courses-img-2">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Продолжение<br> обучения</p>
                   </div></a></div>
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-3.png" alt="courses-img-3"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-3.webp" type="image/webp"><img class="img" src="img/courses-img-3.png" alt="courses-img-3">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Повышаем<br> ответственность</p>
                   </div></a></div>
               <div class="g-card__col"><a class="courses__item g-card__item" href="#">
-                  <div class="courses__img g-card__img"><img class="img" src="img/courses-img-4.png" alt="courses-img-4"></div>
+                  <div class="courses__img g-card__img">
+                    <picture>
+                      <source srcset="img/courses-img-4.webp" type="image/webp"><img class="img" src="img/courses-img-4.png" alt="courses-img-4">
+                    </picture>
+                  </div>
                   <div class="courses__body g-card__body">
                     <p>Стань<br> Профессионалом</p>
                   </div></a></div>
@@ -142,9 +161,16 @@
               <p>Дайвинг – это жизнь! Интересная, увлекательная, наполненная событиями и приключениями. Я знаю это наверняка, потому что дайвинг – это моя жизнь, мой опыт, личный и профессиональный, которым я готова поделиться с каждым из Вас. На этом сайте Вы легко найдете информацию, которая поможет реализовать как можно больше Ваших стремлений в области дайвинга и не только. Те, кто еще не присоединился к скуба-нации, узнают здесь также много инятересного о подводном мире и о нас, дайверах. И не важно, как Вы сюда попали, важно чтобы Вы нашли здесь то, что ищите. А я постараюсь Вам в этом помочь.</p><a class="button" href="#">Подробнее</a>
             </div>
             <!-- /.whywe__content-->
-            <div class="whywe__images"><img class="whywe__img" src="img/img-why-1.jpg" alt="alt">
+            <div class="whywe__images">
+              <picture>
+                <source srcset="img/img-why-1.webp" type="image/webp"><img class="whywe__img" src="img/img-why-1.jpg" alt="alt">
+              </picture>
               <div class="whywe__sert">
-                <div class="whywe__sert-img"><img class="img" src="img/img-why-2.jpg" alt="alt"></div><a class="whywe__sert-link" href="#">Дайв-центр PADI</a>
+                <div class="whywe__sert-img">
+                  <picture>
+                    <source srcset="img/img-why-2.webp" type="image/webp"><img class="img" src="img/img-why-2.jpg" alt="alt">
+                  </picture>
+                </div><a class="whywe__sert-link" href="#">Дайв-центр PADI</a>
               </div>
             </div>
             <!-- /.whywe__images-->
@@ -160,22 +186,38 @@
           <div class="travels__wrap g-card__wrap">
             <div class="g-card__row flex">
               <div class="g-card__col"><a class="travels__item g-card__item" href="#">
-                  <div class="travels__img g-card__img"><img class="img" src="img/travels__img-1.png" alt="travels__img-1"></div>
+                  <div class="travels__img g-card__img">
+                    <picture>
+                      <source srcset="img/travels__img-1.webp" type="image/webp"><img class="img" src="img/travels__img-1.png" alt="travels__img-1">
+                    </picture>
+                  </div>
                   <div class="travels__body g-card__body">
                     <p>По России</p>
                   </div></a></div>
               <div class="g-card__col"><a class="travels__item g-card__item" href="#">
-                  <div class="travels__img g-card__img"><img class="img" src="img/travels__img-2.png" alt="travels__img-2"></div>
+                  <div class="travels__img g-card__img">
+                    <picture>
+                      <source srcset="img/travels__img-2.webp" type="image/webp"><img class="img" src="img/travels__img-2.png" alt="travels__img-2">
+                    </picture>
+                  </div>
                   <div class="travels__body g-card__body">
                     <p>По Миру</p>
                   </div></a></div>
               <div class="g-card__col"><a class="travels__item g-card__item" href="#">
-                  <div class="travels__img g-card__img"><img class="img" src="img/travels__img-3.png" alt="travels__img-3"></div>
+                  <div class="travels__img g-card__img">
+                    <picture>
+                      <source srcset="img/travels__img-3.webp" type="image/webp"><img class="img" src="img/travels__img-3.png" alt="travels__img-3">
+                    </picture>
+                  </div>
                   <div class="travels__body g-card__body">
                     <p>Отчёты</p>
                   </div></a></div>
               <div class="g-card__col"><a class="travels__item g-card__item" href="#">
-                  <div class="travels__img g-card__img"><img class="img" src="img/travels__img-4.png" alt="travels__img-4"></div>
+                  <div class="travels__img g-card__img">
+                    <picture>
+                      <source srcset="img/travels__img-4.webp" type="image/webp"><img class="img" src="img/travels__img-4.png" alt="travels__img-4">
+                    </picture>
+                  </div>
                   <div class="travels__body g-card__body">
                     <p>Расписания</p>
                   </div></a></div>
@@ -192,7 +234,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -204,7 +250,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -216,7 +266,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -228,7 +282,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -240,7 +298,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -252,7 +314,11 @@
               <div class="swiper-slide">
                 <div class="responses-slider__elem">
                   <div class="responses-slider__block">
-                    <div class="responses-slider__block-img"><img class="img" src="img/responses__user.png" alt="responses__user"></div>
+                    <div class="responses-slider__block-img">
+                      <picture>
+                        <source srcset="img/responses__user.webp" type="image/webp"><img class="img" src="img/responses__user.png" alt="responses__user">
+                      </picture>
+                    </div>
                     <div class="responses-slider__block-body">
                       <p class="responses-slider__block-name">Григорий Горбунов</p>
                       <p class="responses-slider__block-text">Москва</p>
@@ -285,7 +351,11 @@
               <p>Дайвинг – это жизнь! Интересная, увлекательная, наполненная событиями и приключениями. Я знаю это наверняка, потому что дайвинг – это моя жизнь, мой опыт, личный и профессиональный, которым я готова поделиться с каждым из Вас. На этом сайте Вы легко найдете информацию, которая поможет реализовать как можно больше Ваших стремлений в области дайвинга и не только. Те, кто еще не присоединился к скуба-нации, узнают здесь также много инятересного о подводном мире и о нас, дайверах. И не важно, как Вы сюда попали, важно чтобы Вы нашли здесь то, что ищите. А я постараюсь Вам в этом помочь.</p><a class="button" href="#">Подробнее</a>
             </div>
             <!-- /.whywe__content-->
-            <div class="improvements__images"><img class="improvements__img" src="img/img-why-1.jpg" alt="alt"></div>
+            <div class="improvements__images">
+              <picture>
+                <source srcset="img/img-why-1.webp" type="image/webp"><img class="improvements__img" src="img/img-why-1.jpg" alt="alt">
+              </picture>
+            </div>
             <!-- /.whywe__images-->
           </div>
           <!-- /.whywe__row.flex-->
